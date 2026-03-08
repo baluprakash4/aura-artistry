@@ -11,9 +11,9 @@ export const About = () => {
           className="relative"
         >
           <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl relative z-10">
-            <img 
-              src="https://picsum.photos/seed/artist-portrait/1200/1500" 
-              alt="The Artist" 
+            <img
+              src="https://picsum.photos/seed/artist-portrait/1200/1500"
+              alt="The Artist"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -29,7 +29,7 @@ export const About = () => {
         >
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-clay">The Story Behind the Art</span>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive leading-tight">
-            Meet <span className="italic text-brand-clay">Elena</span> <br /> Vancour
+            Meet <span className="italic text-brand-clay">Ruchitha</span> <br /> Karuturi
           </h1>
           <div className="space-y-6 text-lg text-brand-olive/70 leading-relaxed">
             <p>
@@ -42,7 +42,7 @@ export const About = () => {
               Every piece I create, whether it's a large-scale oil painting or a small handcrafted gift, is infused with intention and a deep respect for the materials I use. I believe that art should not just decorate a space, but transform it.
             </p>
           </div>
-          
+
           <div className="pt-8 grid grid-cols-2 gap-8">
             <div>
               <h4 className="font-serif text-3xl font-bold text-brand-olive">10+</h4>

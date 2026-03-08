@@ -1,13 +1,28 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { Upload, Send, CheckCircle2 } from 'lucide-react';
+import React from "react";
+import emailjs from "@emailjs/browser";
+import { motion } from "motion/react";
+import { Upload, Send, CheckCircle2 } from "lucide-react";
 
 export const CustomOrder = () => {
   const [submitted, setSubmitted] = React.useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    emailjs
+      .sendForm(
+        "service_qkv59xn",
+        "template_dqmv7uj",
+        e.currentTarget,
+        "4NVT4jiLSC5BMp0oB",
+      )
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Failed to send request");
+      });
   };
 
   if (submitted) {
@@ -19,14 +34,17 @@ export const CustomOrder = () => {
           className="bg-white p-12 rounded-[40px] shadow-xl"
         >
           <CheckCircle2 className="w-20 h-20 text-brand-olive mx-auto mb-6" />
-          <h2 className="text-4xl font-serif font-bold text-brand-olive mb-4">Request Received!</h2>
+
+          <h2 className="text-4xl font-serif font-bold text-brand-olive mb-4">
+            Request Received!
+          </h2>
+
           <p className="text-brand-olive/60 mb-8 leading-relaxed">
-            Thank you for your interest in a custom piece. I'll review your request and get back to you within 2-3 business days to discuss the details and pricing.
+            Thank you for your interest in a custom piece. I'll review your
+            request and get back to you within 2–3 business days.
           </p>
-          <button 
-            onClick={() => setSubmitted(false)}
-            className="btn-primary"
-          >
+
+          <button onClick={() => setSubmitted(false)} className="btn-primary">
             Send Another Request
           </button>
         </motion.div>
@@ -37,36 +55,22 @@ export const CustomOrder = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        {/* LEFT SIDE CONTENT */}
+
         <div>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-8">Custom Art <br /><span className="italic text-brand-clay">Requests</span></h1>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-8">
+            Custom Art <br />
+            <span className="italic text-brand-clay">Requests</span>
+          </h1>
+
           <p className="text-brand-olive/60 text-lg mb-12 leading-relaxed">
-            Whether it's a portrait of a loved one, a landscape of a special place, or a unique gift for a celebration, I'd love to help bring your vision to life.
+            Whether it's a portrait of a loved one, a landscape of a special
+            place, or a unique gift for a celebration, I'd love to help bring
+            your vision to life.
           </p>
-          
-          <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <div className="w-10 h-10 rounded-full bg-brand-clay/10 flex items-center justify-center flex-shrink-0 text-brand-clay font-bold">1</div>
-              <div>
-                <h3 className="font-serif text-xl font-bold text-brand-olive mb-2">Share Your Vision</h3>
-                <p className="text-brand-olive/60">Tell me about the subject, style, and size you're looking for.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-10 h-10 rounded-full bg-brand-clay/10 flex items-center justify-center flex-shrink-0 text-brand-clay font-bold">2</div>
-              <div>
-                <h3 className="font-serif text-xl font-bold text-brand-olive mb-2">Review & Quote</h3>
-                <p className="text-brand-olive/60">I'll send you a detailed quote and timeline based on your requirements.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-10 h-10 rounded-full bg-brand-clay/10 flex items-center justify-center flex-shrink-0 text-brand-clay font-bold">3</div>
-              <div>
-                <h3 className="font-serif text-xl font-bold text-brand-olive mb-2">Creation Process</h3>
-                <p className="text-brand-olive/60">Once approved, I'll start working on your piece, sharing updates along the way.</p>
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* FORM */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,37 +78,97 @@ export const CustomOrder = () => {
           className="bg-white p-8 md:p-12 rounded-[40px] shadow-xl border border-brand-olive/5"
         >
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* NAME + EMAIL */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Name</label>
-                <input required type="text" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
+                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">
+                  Name
+                </label>
+
+                <input
+                  name="name"
+                  required
+                  type="text"
+                  className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl"
+                />
               </div>
+
               <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Email</label>
-                <input required type="email" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Phone (Optional)</label>
-              <input type="tel" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
-            </div>
+                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">
+                  Email
+                </label>
 
-            <div className="space-y-2">
-              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Description of Gift</label>
-              <textarea required rows={4} className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20 resize-none" placeholder="Describe what you have in mind..."></textarea>
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Reference Image</label>
-              <div className="border-2 border-dashed border-brand-olive/10 rounded-2xl p-8 text-center hover:bg-brand-olive/5 transition-colors cursor-pointer group">
-                <Upload className="w-8 h-8 text-brand-olive/20 mx-auto mb-2 group-hover:text-brand-clay transition-colors" />
-                <p className="text-sm text-brand-olive/40">Click to upload or drag and drop</p>
+                <input
+                  name="email"
+                  required
+                  type="email"
+                  className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl"
+                />
               </div>
             </div>
 
-            <button type="submit" className="w-full btn-primary flex items-center justify-center py-5">
-              Submit Order Request <Send className="ml-2 w-4 h-4" />
+            {/* PHONE */}
+
+            <div className="space-y-2">
+              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">
+                Phone (Optional)
+              </label>
+
+              <input
+                name="phone"
+                type="tel"
+                className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl"
+              />
+            </div>
+
+            {/* DESCRIPTION */}
+
+            <div className="space-y-2">
+              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">
+                Description of Gift
+              </label>
+
+              <textarea
+                name="description"
+                required
+                rows={4}
+                placeholder="Describe what you have in mind..."
+                className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl resize-none"
+              ></textarea>
+            </div>
+
+            {/* FILE UPLOAD */}
+
+            <div className="space-y-2">
+              <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">
+                Reference Image (Optional)
+              </label>
+
+              <label className="border-2 border-dashed border-brand-olive/10 rounded-2xl p-8 text-center block cursor-pointer hover:bg-brand-olive/5">
+                <Upload className="w-8 h-8 text-brand-olive/30 mx-auto mb-2" />
+
+                <p className="text-sm text-brand-olive/40">
+                  Click to upload image
+                </p>
+
+                <input
+                  type="file"
+                  name="reference_image"
+                  accept="image/*"
+                  className="hidden"
+                />
+              </label>
+            </div>
+
+            {/* SUBMIT */}
+
+            <button
+              type="submit"
+              className="w-full btn-primary flex items-center justify-center py-5"
+            >
+              Submit Order Request
+              <Send className="ml-2 w-4 h-4" />
             </button>
           </form>
         </motion.div>
