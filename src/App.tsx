@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { Shop } from './pages/Shop';
+import { CustomOrder } from './pages/CustomOrder';
+import { Workshops } from './pages/Workshops';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+
+export default function App() {
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen selection:bg-brand-clay/20 selection:text-brand-clay">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/custom" element={<CustomOrder />} />
+            <Route path="/workshops" element={<Workshops />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
