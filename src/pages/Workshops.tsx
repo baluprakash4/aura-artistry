@@ -12,11 +12,11 @@ export const Workshops = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div className="relative rounded-[60px] overflow-hidden bg-brand-olive text-white p-12 md:p-24 text-center mb-24">
-        <div className="absolute inset-0 opacity-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+      <div className="relative rounded-sm overflow-hidden bg-brand-leather text-[#e8dcc4] p-12 md:p-24 text-center mb-24 leather-border">
+        <div className="absolute inset-0 opacity-10">
           <img 
-            src="https://picsum.photos/seed/workshop-bg/1920/1080?blur=10" 
+            src="https://picsum.photos/seed/workshop-bg/1920/1080?grayscale" 
             alt="Workshop background" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -30,7 +30,7 @@ export const Workshops = () => {
           <h1 className="text-5xl md:text-8xl font-serif font-bold mb-8 leading-tight">
             Creative <br /> <span className="italic text-brand-clay">Workshops</span>
           </h1>
-          <p className="text-xl text-white/70 mb-12 leading-relaxed">
+          <p className="text-xl text-[#e8dcc4]/70 mb-12 leading-relaxed font-serif italic">
             I'm preparing a series of intimate, hands-on workshops where you can learn the techniques behind my art. From watercolor basics to advanced ceramic textures.
           </p>
 

@@ -17,3 +17,12 @@ export interface Workshop {
   date?: string;
   status: 'coming-soon' | 'active';
 }
+
+export interface Testimonial {
+  id: string;
+  customerName: string;
+  location?: string;
+  feedback: string;
+  rating: number;
+  imageUrl: string;
+}
