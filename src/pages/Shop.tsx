@@ -20,11 +20,11 @@ export const Shop = () => {
   });
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <header className="text-center mb-16">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-6">The Gallery</h1>
-        <p className="text-brand-olive/60 max-w-xl mx-auto text-lg">
-          Browse through my collection of original paintings, handcrafted items, and unique gift ideas.
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+      <header className="text-center mb-16 book-page p-12 leather-border max-w-3xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-6">The Scribe's Gallery</h1>
+        <p className="text-brand-olive/70 max-w-xl mx-auto text-lg font-serif italic">
+          Browse through my collection of original paintings, handcrafted items, and unique gift ideas preserved on vintage parchment.
         </p>
       </header>
 
@@ -38,8 +38,8 @@ export const Shop = () => {
               className={cn(
                 "px-6 py-2 rounded-full text-sm font-medium transition-all capitalize",
                 filter === cat 
-                  ? "bg-brand-olive text-white shadow-md" 
-                  : "bg-white text-brand-olive/60 hover:bg-brand-olive/5 border border-brand-olive/10"
+                  ? "bg-brand-leather text-[#e8dcc4] shadow-md" 
+                  : "bg-[#e8dcc4] text-brand-olive/60 hover:bg-brand-olive/5 border border-black/10"
               )}
             >
               {cat}

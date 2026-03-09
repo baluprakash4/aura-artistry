@@ -5,20 +5,43 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Inter", sans-serif;
   
-  --color-brand-cream: #fdfcf8;
-  --color-brand-olive: #5a5a40;
-  --color-brand-clay: #b87d64;
+  --color-brand-cream: #c7b299;
+  --color-brand-olive: #3d3d2d;
+  --color-brand-clay: #5d3a2a;
   --color-brand-ink: #1a1a1a;
+  --color-brand-paper: #b19a7d;
+  --color-brand-leather: #4a3427;
 }
 
 @layer base {
   body {
-    @apply bg-brand-cream text-brand-ink font-sans antialiased;
+    @apply bg-brand-cream text-brand-ink font-serif antialiased relative;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  }
+  
+  body::before {
+    content: "";
+    @apply fixed inset-0 pointer-events-none z-[-2] opacity-80;
+    background: 
+      radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.2) 100%),
+      url("https://www.transparenttextures.com/patterns/stardust.png");
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-serif tracking-tight;
   }
+}
+
+.book-page {
+  @apply bg-[#e8dcc4] shadow-[inset_0_0_50px_rgba(0,0,0,0.1)] border border-black/5 rounded-sm relative overflow-hidden;
+}
+
+.leather-border {
+  @apply border-4 border-brand-leather shadow-lg;
+}
+
+.paper-flower {
+  @apply pointer-events-none select-none opacity-40 grayscale sepia brightness-75;
 }
 
 .glass-card {

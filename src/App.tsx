@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { PigeonAnimation } from './components/PigeonAnimation';
+import { BackgroundCollage } from './components/BackgroundCollage';
+import { FlowerDecorations } from './components/PaperFlower';
 import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
 import { CustomOrder } from './pages/CustomOrder';
@@ -13,6 +16,9 @@ export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen selection:bg-brand-clay/20 selection:text-brand-clay">
+        <BackgroundCollage />
+        <FlowerDecorations />
+        <PigeonAnimation />
         <Navbar />
         <main className="flex-grow">
           <Routes>
