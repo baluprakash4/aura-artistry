@@ -61,7 +61,7 @@ export const DaisyFlower: React.FC<PaperFlowerProps> = ({ className, delay = 0, 
 
 export const FlowerDecorations = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
       {/* Original Flowers - Adjusted to avoid logo area */}
       <PaperFlower className="top-[15%] left-[10%] w-32 h-32" rotate={15} delay={0.5} />
       <PaperFlower className="top-[15%] right-[5%] w-24 h-24" rotate={-10} delay={0.7} scale={0.8} />

@@ -32,7 +32,7 @@ export const Home = () => {
                 <span className="italic text-brand-clay underline decoration-brand-clay/30 underline-offset-8">Love</span> & <br />
                 Handmade.
               </h1>
-              <p className="text-lg text-brand-olive/70 max-w-md mb-10 leading-relaxed font-serif italic">
+              <p className="text-xl text-black max-w-md mb-10 leading-relaxed font-serif italic font-bold">
                 Crafting soulful messages and bespoke couple gifts that turn your shared memories into timeless treasures.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -83,7 +83,7 @@ export const Home = () => {
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-olive mb-4">Crafted with Love</h2>
-            <p className="text-brand-olive/70 italic font-serif">Bespoke gifts for your most cherished moments.</p>
+            <p className="text-brand-ink italic font-serif font-semibold">Bespoke gifts for your most cherished moments.</p>
           </div>
           <Link to="/shop" className="text-brand-olive font-medium hover:text-brand-clay transition-colors flex items-center">
             View All <ArrowRight className="ml-2 w-4 h-4" />
@@ -100,7 +100,7 @@ export const Home = () => {
       <section className="bg-brand-olive/5 py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-olive mb-4">New Arrivals</h2>
-          <p className="text-brand-olive/60">The latest additions to our curated collection.</p>
+          <p className="text-brand-olive/80">The latest additions to our curated collection.</p>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Carousel slideClassName="sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
@@ -135,7 +135,7 @@ export const Home = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-olive mb-4">Loved by Our Customers</h2>
-          <p className="text-brand-olive/60 font-serif italic">Real stories from customers who turned their memories into art.</p>
+          <p className="text-brand-olive/80 font-serif italic">Real stories from customers who turned their memories into art.</p>
         </div>
         
         <Carousel 
@@ -162,13 +162,13 @@ export const Home = () => {
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-brand-olive/70 font-serif italic mb-6 flex-grow leading-relaxed">
+                <p className="text-brand-olive/90 font-serif italic mb-6 flex-grow leading-relaxed">
                   "{t.feedback}"
                 </p>
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-brand-olive/5">
                   <div>
                     <h4 className="font-bold text-brand-olive">{t.customerName}</h4>
-                    {t.location && <p className="text-xs text-brand-olive/40 uppercase tracking-widest">{t.location}</p>}
+                    {t.location && <p className="text-xs text-brand-olive/70 uppercase tracking-widest">{t.location}</p>}
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export const Home = () => {
             </div>
             <div>
               <h3 className="font-serif text-2xl font-bold text-brand-olive">Art Workshops Coming Soon</h3>
-              <p className="text-brand-olive/60">Join the waiting list to be the first to know about upcoming sessions.</p>
+              <p className="text-brand-olive/80">Join the waiting list to be the first to know about upcoming sessions.</p>
             </div>
           </div>
           <Link to="/workshops" className="btn-secondary">
@@ -206,12 +206,12 @@ export const Home = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif font-bold text-brand-olive mb-4">Follow the Journey</h2>
           <a 
-            href="https://instagram.com/balu_nerella" 
+            href="https://instagram.com/artistic_2_4" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-brand-clay font-medium hover:underline flex items-center justify-center"
           >
-            @balu_nerella <Instagram className="ml-2 w-4 h-4" />
+            @artistic_2_4 <Instagram className="ml-2 w-4 h-4" />
           </a>
         </div>
         <Carousel 

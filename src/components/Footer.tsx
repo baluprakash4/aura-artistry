@@ -30,7 +30,7 @@ export const Footer = () => {
             <h3 className="font-serif text-lg font-semibold text-[#e8dcc4] mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/balu_nerella" 
+                href="https://instagram.com/artistic_2_4" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors"
@@ -38,7 +38,7 @@ export const Footer = () => {
                 <Instagram className="w-5 h-5 text-[#e8dcc4]" />
               </a>
               <a 
-                href="https://wa.me/9123456789" 
+                href="https://wa.me/919885739887?text=Hi!%20I'm%20interested%20in%20your%20beautiful%20artwork.%20Could%20you%20please%20share%20more%20details%20and%20pricing?" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors"

@@ -55,3 +55,20 @@
 .btn-secondary {
   @apply px-8 py-3 border border-brand-olive text-brand-olive rounded-full font-medium transition-all hover:bg-brand-olive hover:text-white hover:scale-105 active:scale-95;
 }
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
