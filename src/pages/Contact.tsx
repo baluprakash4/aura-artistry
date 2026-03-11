@@ -7,7 +7,7 @@ export const Contact = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="text-center max-w-3xl mx-auto mb-20">
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-6">Get in Touch</h1>
-        <p className="text-brand-olive/60 text-lg">
+        <p className="text-brand-ink text-lg font-semibold">
           Have a question about a piece, want to discuss a custom project, or just want to say hello? I'd love to hear from you.
         </p>
       </div>
@@ -22,7 +22,7 @@ export const Contact = () => {
                 <Mail className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/40">Email</p>
+                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/90">Email</p>
                 <a href="mailto:prakashnerella.tech@gmail.com" className="text-brand-olive font-medium hover:text-brand-clay transition-colors">
                   prakashnerella.tech@gmail.com
                 </a>
@@ -34,13 +34,13 @@ export const Contact = () => {
                 <Phone className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/40">Call / SMS</p>
+                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/90">Call / SMS</p>
                 <div className="flex space-x-3">
-                  <a href="tel:9123456789" className="text-brand-olive font-medium hover:text-brand-clay transition-colors">
-                    9123456789
+                  <a href="tel:9885739887" className="text-brand-olive font-medium hover:text-brand-clay transition-colors">
+                    9885739887
                   </a>
                   <span className="text-brand-olive/20">|</span>
-                  <a href="sms:9123456789" className="text-brand-olive font-medium hover:text-brand-clay transition-colors">
+                  <a href="sms:9885739887" className="text-brand-olive font-medium hover:text-brand-clay transition-colors">
                     SMS
                   </a>
                 </div>
@@ -52,14 +52,14 @@ export const Contact = () => {
                 <Instagram className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/40">Instagram</p>
+                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/90">Instagram</p>
                 <a 
-                  href="https://instagram.com/balu_nerella" 
+                  href="https://instagram.com/artistic_2_4" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-brand-olive font-medium hover:text-brand-clay transition-colors"
                 >
-                  @balu_nerella
+                  @artistic_2_4
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ export const Contact = () => {
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/40">Studio</p>
+                <p className="text-xs uppercase tracking-widest font-bold text-brand-olive/90">Studio</p>
                 <p className="text-brand-olive font-medium">Portland, Oregon</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ export const Contact = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <a 
-              href="https://wa.me/9123456789" 
+              href="https://wa.me/919885739887?text=Hi!%20I'm%20interested%20in%20your%20beautiful%20artwork.%20Could%20you%20please%20share%20more%20details%20and%20pricing?" 
               target="_blank" 
               rel="noopener noreferrer"
               className="py-4 bg-brand-clay text-white rounded-full font-bold flex items-center justify-center hover:scale-105 transition-transform shadow-lg"
@@ -91,7 +91,7 @@ export const Contact = () => {
               </svg> WhatsApp
             </a>
             <a 
-              href="tel:9123456789" 
+              href="tel:9885739887" 
               className="py-4 bg-brand-olive text-white rounded-full font-bold flex items-center justify-center hover:scale-105 transition-transform shadow-lg"
             >
               <Phone className="mr-2 w-5 h-5" /> Call Now
@@ -108,23 +108,23 @@ export const Contact = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Name</label>
-                  <input required type="text" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
+                  <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/70 ml-1">Name</label>
+                  <input required type="text" className="w-full px-6 py-4 bg-brand-cream/80 border border-brand-olive/20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Email</label>
-                  <input required type="email" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
+                  <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/70 ml-1">Email</label>
+                  <input required type="email" className="w-full px-6 py-4 bg-brand-cream/80 border border-brand-olive/20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Subject</label>
-                <input required type="text" className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
+                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/70 ml-1">Subject</label>
+                <input required type="text" className="w-full px-6 py-4 bg-brand-cream/80 border border-brand-olive/20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20" />
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/40 ml-1">Message</label>
-                <textarea required rows={6} className="w-full px-6 py-4 bg-brand-cream/50 border border-brand-olive/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20 resize-none"></textarea>
+                <label className="text-xs uppercase tracking-widest font-bold text-brand-olive/70 ml-1">Message</label>
+                <textarea required rows={6} className="w-full px-6 py-4 bg-brand-cream/80 border border-brand-olive/20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-clay/20 resize-none"></textarea>
               </div>
 
               <button type="submit" className="w-full btn-primary flex items-center justify-center py-5">

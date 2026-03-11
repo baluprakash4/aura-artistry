@@ -8,6 +8,11 @@ export interface ArtPiece {
   category: ArtCategory;
   imageUrl: string;
   featured?: boolean;
+  details?: {
+    size: string;
+    effort: string;
+    materials: string[];
+  };
 }
 
 export interface Workshop {

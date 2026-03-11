@@ -23,7 +23,7 @@ export const Shop = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
       <header className="text-center mb-16 book-page p-12 leather-border max-w-3xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive mb-6">The Scribe's Gallery</h1>
-        <p className="text-brand-olive/70 max-w-xl mx-auto text-lg font-serif italic">
+        <p className="text-brand-ink max-w-xl mx-auto text-lg font-serif italic font-semibold">
           Browse through my collection of original paintings, handcrafted items, and unique gift ideas preserved on vintage parchment.
         </p>
       </header>
@@ -49,13 +49,13 @@ export const Shop = () => {
 
         {/* Search */}
         <div className="relative w-full md:w-72">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-olive/40" />
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-olive/70" />
           <input
             type="text"
             placeholder="Search artwork..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 bg-white border border-brand-olive/10 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-clay/20 transition-all text-sm"
+            className="w-full pl-12 pr-4 py-3 bg-[#e8dcc4] border border-brand-olive/20 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-clay/20 transition-all text-sm"
           />
         </div>
       </div>

@@ -58,7 +58,7 @@ export const About = () => {
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-brand-olive leading-tight">
             The <span className="italic text-brand-clay">Scribe</span> of <br /> Hearts
           </h1>
-          <div className="space-y-6 text-lg text-brand-olive/70 leading-relaxed font-serif italic">
+          <div className="space-y-6 text-lg text-brand-ink leading-relaxed font-serif italic font-semibold">
             <p>
               Every love story is unique, and I believe it deserves to be told with the same care and beauty as a fine art piece.
             </p>
@@ -73,11 +73,11 @@ export const About = () => {
           <div className="pt-8 grid grid-cols-2 gap-8">
             <div>
               <h4 className="font-serif text-3xl font-bold text-brand-olive">10+</h4>
-              <p className="text-sm text-brand-olive/40 uppercase tracking-widest font-bold">Years Experience</p>
+              <p className="text-sm text-brand-olive/70 uppercase tracking-widest font-bold">Years Experience</p>
             </div>
             <div>
               <h4 className="font-serif text-3xl font-bold text-brand-olive">500+</h4>
-              <p className="text-sm text-brand-olive/40 uppercase tracking-widest font-bold">Pieces Created</p>
+              <p className="text-sm text-brand-olive/70 uppercase tracking-widest font-bold">Pieces Created</p>
             </div>
           </div>
         </motion.div>
@@ -87,7 +87,7 @@ export const About = () => {
       <section className="mt-32">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-serif font-bold text-brand-olive mb-4">Why Choose Ruchi Collections</h2>
-          <p className="text-brand-olive/60 font-serif italic">Preserving memories through passionate artistic craftsmanship.</p>
+          <p className="text-brand-olive/80 font-serif italic">Preserving memories through passionate artistic craftsmanship.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,7 +135,7 @@ export const About = () => {
                 {item.icon}
               </div>
               <h3 className="font-serif text-2xl font-bold text-brand-olive mb-4">{item.title}</h3>
-              <p className="text-brand-olive/60 leading-relaxed font-serif italic">
+              <p className="text-brand-olive/80 leading-relaxed font-serif italic">
                 {item.description}
               </p>
             </motion.div>

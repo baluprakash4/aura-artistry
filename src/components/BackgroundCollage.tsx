@@ -4,7 +4,7 @@ import { Paperclip } from 'lucide-react';
 
 export const BackgroundCollage = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden select-none opacity-40">
+    <div className="fixed inset-0 pointer-events-none z-[-2] overflow-hidden select-none opacity-40">
       {/* Newspaper scrap top left */}
       <div className="absolute top-0 left-0 w-64 h-80 -translate-x-10 -translate-y-10 rotate-[-5deg] bg-[#e6dfd1] p-6 shadow-lg border border-black/5">
         <div className="font-serif text-[10px] leading-tight text-black/40 overflow-hidden h-full">
