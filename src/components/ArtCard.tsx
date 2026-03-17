@@ -19,6 +19,7 @@ export const ArtCard: React.FC<ArtCardProps> = ({ piece, className }) => {
   };
 
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
+    e.preventDefault();
     e.stopPropagation();
     const message = `Hi! I'm interested in ordering the artwork: ${piece.title}. Please share the order details.`;
     const encodedMessage = encodeURIComponent(message);
@@ -55,7 +56,7 @@ export const ArtCard: React.FC<ArtCardProps> = ({ piece, className }) => {
             <div className="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
               <button 
                 onClick={handleWhatsAppOrder}
-                className="bg-white text-brand-olive p-4 rounded-full shadow-lg transform translate-y-4 hover:translate-y-0 transition-transform duration-500 flex items-center space-x-2 font-bold"
+                className="bg-brand-olive text-brand-cream p-4 rounded-full shadow-lg transform translate-y-4 hover:translate-y-0 transition-transform duration-500 flex items-center space-x-2 font-bold"
               >
                 <MessageSquare className="w-6 h-6" />
                 <span>Order</span>
