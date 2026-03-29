@@ -11,6 +11,7 @@ import { CustomOrder } from './pages/CustomOrder';
 import { Workshops } from './pages/Workshops';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { HowToOrder } from './pages/HowToOrder';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/workshops" element={<Workshops />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/how-to-order" element={<HowToOrder />} />
           </Routes>
         </main>
         <Footer />
